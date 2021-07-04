@@ -11,18 +11,113 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
+    <style>
+        body{
+          font: 13px Arial,Sans-Serif;
+          color: slategray;
+        }
+        h2{
+          color: rgb(20, 0, 0);
+          font-family: Arial, Helvetica;
+        }
+        .top{
+          padding: 1vw;
+          margin-bottom:0;
+        }
+        .middle{
+          background-color: red;
+          height: 77%;
+          margin:auto;
+         
+          
+        }
+        #google{
+          font-size: 90px;
+        }
+        .second-bottom{
+          color: slategray;
+          padding: 15px;
+          border-bottom: 1px solid rgb(201, 201, 201);
+          margin-bottom: 0;
+                   
+        }
+        .bottom{
+          border-style: edge;
+          padding: 10px 20px;
+          margin-bottom: 0;
+        }
+        .bottom-nav a{
+          color: slategray;
+          padding: 20px;
+        }
+        .row-bottom{
+          padding: 0px 10px;;
+        }
+        .left-col{
+          text-align: left;
+        }
+        .right-col{
+          text-align: right;
+        }
+        @media screen and (max-width: 700px) {
+          .left-col{
+            text-align: center;
+          }
+          .right-col{
+            text-align: center;
+          }
+          
+        }
+        
+        
+    </style>
     <body>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-             
+      
+        <div class="jumbotron top text-right">
+          <a href="">Gmail</a>
+          <a href="">Images</a>
+          <label for="login">
+            <input type="submit" value="Sign In"name="login" id="login">
+          </label> 
         </div>
-        <div class="container">
-             
+        <div class="jumbotron text-center middle">
+             <h2 id="google">Google</h2>
+             <label for="searchbar">
+               <input type="search" name="searchbar" id="searchbar">
+             </label>
+             <br>
+             <label for="gsearch">
+               <input type="submit" value="Google Search" name="gsearch" id="gsearch">
+             </label>
+             <label for="lsearch">
+              <input type="submit" value="I'm Feeling Lucky" name="lsearch" id="lsearch">
+            </label>
+            <br>
+            <p>Google offered in:<a href=""> Filipino</a> <a href="">Cebuano</a></p>
+
+
+        </div> 
+        <div class="jumbotron second-bottom" >
+          <span>Philippines</span>  
         </div>
-        <div class="container">
-             
+     
+        <div class="jumbotron bottom" >
+            <div class="row row-bottom">
+              <div class="col-xl-6 left-col bottom-nav">
+                  <a href="#">About</a> 
+                  <a href="#">Advertising</a> 
+                  <a href="#">Business</a> 
+                  <a href="#">How Search Works</a>
+              </div>
+                 
+              <div class="col-xl-6 right-col bottom-nav">
+                  <a href="#">Privacy</a> 
+                  <a href="#">Terms</a> 
+                  <a href="#">Settings</a>
+              </div> 
+            </div>
         </div>
-      </div>
+     
 
     </body>
 </html>
