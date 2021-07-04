@@ -5,7 +5,7 @@
         <title>google-homepage</title> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -25,16 +25,29 @@
           margin-bottom:0;
         }
         .middle{
-          background-color: red;
-          height: 77%;
+          background-color: white;
+     
+          padding-top:2%;
           margin:auto;
-         
-          
+        }
+        .middle-button{
+            padding: 8px;
+            margin: 4px;
+        }
+        #searchbar{
+          height: 42px;
+          width: 550px;
+          border:1px solid rgb(209, 209, 209);
+          border-radius: 30px;
+          margin-bottom: 20px;
         }
         #google{
-          font-size: 90px;
+          font-size: 80px;
+          font-weight: 90px;
+          font-stretch: ultra-expanded;
+          padding-bottom: 12px;
         }
-        .second-bottom{
+        .sbottom{
           color: slategray;
           padding: 15px;
           border-bottom: 1px solid rgb(201, 201, 201);
@@ -42,16 +55,17 @@
                    
         }
         .bottom{
-          border-style: edge;
           padding: 10px 20px;
           margin-bottom: 0;
         }
         .bottom-nav a{
           color: slategray;
           padding: 20px;
+          
         }
-        .row-bottom{
-          padding: 0px 10px;;
+        .r-bottom{
+          padding: 0px 10px;
+
         }
         .left-col{
           text-align: left;
@@ -72,14 +86,16 @@
         
     </style>
     <body>
-      
+      <!--top-->
         <div class="jumbotron top text-right">
-          <a href="">Gmail</a>
-          <a href="">Images</a>
+            <a href="">Gmail</a>
+            <a href="">Images</a>
           <label for="login">
             <input type="submit" value="Sign In"name="login" id="login">
           </label> 
         </div>
+      <!--end top-->
+      <!--middle--> 
         <div class="jumbotron text-center middle">
              <h2 id="google">Google</h2>
              <label for="searchbar">
@@ -87,29 +103,31 @@
              </label>
              <br>
              <label for="gsearch">
-               <input type="submit" value="Google Search" name="gsearch" id="gsearch">
+               <input type="submit" value="Google Search" name="gsearch" id="gsearch" class="middle-button">
              </label>
              <label for="lsearch">
-              <input type="submit" value="I'm Feeling Lucky" name="lsearch" id="lsearch">
+              <input type="submit" value="I'm Feeling Lucky" name="lsearch" id="lsearch" class="middle-button">
             </label>
             <br>
-            <p>Google offered in:<a href=""> Filipino</a> <a href="">Cebuano</a></p>
-
-
+            <p>Google offered in:<a href="#"> Filipino</a> <a href="#">Cebuano</a></p>
         </div> 
-        <div class="jumbotron second-bottom" >
+        <!--end middle-->
+        
+        <!--bottom--> 
+        
+        <div class="jumbotron sbottom" >
           <span>Philippines</span>  
         </div>
-     
-        <div class="jumbotron bottom" >
-            <div class="row row-bottom">
+
+        <div class="jumbotron bottom">
+            <div class="row r-bottom">
               <div class="col-xl-6 left-col bottom-nav">
                   <a href="#">About</a> 
                   <a href="#">Advertising</a> 
                   <a href="#">Business</a> 
                   <a href="#">How Search Works</a>
               </div>
-                 
+
               <div class="col-xl-6 right-col bottom-nav">
                   <a href="#">Privacy</a> 
                   <a href="#">Terms</a> 
@@ -117,7 +135,7 @@
               </div> 
             </div>
         </div>
-     
+        <!--end bottom--> 
 
     </body>
 </html>
