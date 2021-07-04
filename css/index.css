@@ -1,0 +1,71 @@
+body{
+    font: 13px Arial,Sans-Serif;
+    color: slategray;
+  }
+  h2{
+    color: rgb(20, 0, 0);
+    font-family: Arial, Helvetica;
+  }
+  .top{
+    padding: 1vw;
+    margin-bottom:0;
+  }
+  .middle{
+    background-color: white;
+
+    padding-top:2%;
+    margin:auto;
+  }
+  .middle-button{
+      padding: 8px;
+      margin: 4px;
+  }
+  #searchbar{
+    height: 42px;
+    width: 550px;
+    border:1px solid rgb(209, 209, 209);
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+  #google{
+    font-size: 80px;
+    font-weight: 90px;
+    font-stretch: ultra-expanded;
+    padding-bottom: 12px;
+  }
+  .sbottom{
+    color: slategray;
+    padding: 15px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    margin-bottom: 0;
+             
+  }
+  .bottom{
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+  .bottom-nav a{
+    color: slategray;
+    padding: 20px;
+    
+  }
+  .r-bottom{
+    padding: 0px 10px;
+
+  }
+  .left-col{
+    text-align: left;
+  }
+  .right-col{
+    text-align: right;
+  }
+  @media screen and (max-width: 700px) {
+    .left-col{
+      text-align: center;
+    }
+    .right-col{
+      text-align: center;
+    }
+    
+  }
+  
