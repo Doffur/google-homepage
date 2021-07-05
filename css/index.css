@@ -1,71 +1,120 @@
 body{
-    font: 13px Arial,Sans-Serif;
+    font: 12px Arial,Sans-Serif;
     color: slategray;
-  }
-  h2{
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+/*  head  */
+
+h2{
     color: rgb(20, 0, 0);
     font-family: Arial, Helvetica;
-  }
-  .top{
-    padding: 1vw;
-    margin-bottom:0;
-  }
-  .middle{
+}
+.top{
     background-color: white;
+    padding: 12px 25px 0px 25px;
+    margin-bottom:0;
+    border-radius: 0;
+}
+#login{
+  font-size: 14px;
+  font-stretch: ultra-expanded;
+  color: white;
+  background-color: rgb(39, 119, 240);
+  padding: 10px 25px;
+  margin-left: 10px;
+  border-style: none;
+  border-radius: 4px; 
+  letter-spacing: 1px;
+}
+/*  end  head   */
 
-    padding-top:2%;
-    margin:auto;
-  }
-  .middle-button{
-      padding: 8px;
-      margin: 4px;
+/*  middle  */
+.middle{
+  background-color: white;
+  padding-top:1px;
+  margin-top: 0;
+  margin-bottom:0;
+  height: 100vh;
+}
+#searchbar{
+  height: 45px;
+  width: 590px;
+  border:1px solid rgb(209, 209, 209);
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+#google{
+  font-family: 'Sans-serif' !important;
+  font-size: 90px;
+  font-weight: 500;
+  font-stretch: ultra-expanded;
+  padding-bottom: 12px;
+}
+/*google colors*/
+.blue{color: rgb(39, 119, 240);}
+.red{color: rgba(255, 60, 0, 0.932);}
+.yellow{color: rgba(238, 138, 8, 0.918);}
+.green{color: rgba(16, 141, 16, 0.945);}
+/*google colors*/
+
+.middle-button{
+  background-color: rgb(247, 247, 247);
+  font-size: 13px;
+  padding: 10px;
+  letter-spacing: 1.2px;
+  margin: 10px 5px;
+  border-style: none;
+  border-radius: 4px;
+}
+/*  end  middle   */
+footer{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+.sbottom{
+  color: slategray;
+  padding: 15px 15px 2px 15px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  border-radius: 0;
+  margin: auto;
+}
+.bottom{
+  padding: 20px;
+  border-radius: 0;
+}
+.bottom .row a{
+  padding: 0px 10px;
+}
+.left-col{
+  text-align: left;
+}
+.right-col{
+  text-align: right;
+}
+
+@media screen and (max-width: 800px) and (max-height: 500px) {
+  body{
+    overflow: visible;
   }
   #searchbar{
-    height: 42px;
-    width: 550px;
-    border:1px solid rgb(209, 209, 209);
-    border-radius: 30px;
-    margin-bottom: 20px;
-  }
-  #google{
-    font-size: 80px;
-    font-weight: 90px;
-    font-stretch: ultra-expanded;
-    padding-bottom: 12px;
-  }
-  .sbottom{
-    color: slategray;
-    padding: 15px;
-    border-bottom: 1px solid rgb(201, 201, 201);
-    margin-bottom: 0;
-             
-  }
-  .bottom{
-    padding: 10px 20px;
-    margin-bottom: 0;
-  }
-  .bottom-nav a{
-    color: slategray;
-    padding: 20px;
-    
-  }
-  .r-bottom{
-    padding: 0px 10px;
-
-  }
-  .left-col{
-    text-align: left;
-  }
-  .right-col{
-    text-align: right;
-  }
-  @media screen and (max-width: 700px) {
-    .left-col{
-      text-align: center;
-    }
-    .right-col{
-      text-align: center;
-    }
-    
+    width: 80vw;
   }
   
+  .left-col{
+    text-align: center;
+  }
+  .right-col{
+    text-align: center;
+  }
+  footer{
+    position: realtive;
+  }
+  
+}
