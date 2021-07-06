@@ -28,10 +28,18 @@ body{
   padding:auto;
 }
 .top-link-text{
-  padding: 10px 4px 5px 4px;
+  padding: 10px 2px 5px 2px;
+  
 }
+.top-link-text a{
+  letter-spacing: .5;
+  color: black;
+}
+
+
 .top-link-icon{
-  padding-left: 20px;
+  color: rgb(126, 126, 126);
+  padding-left: 15px;
   padding-top:6px;
   padding-bottom: 0;
 }
@@ -44,7 +52,7 @@ body{
   font-stretch: ultra-expanded;
   color: white;
   background-color: rgb(39, 119, 240);
-  padding: 10px 25px;
+  padding: 9px 23px;
   margin-left: 10px;
   border-style: none;
   border-radius: 4px; 
@@ -73,10 +81,10 @@ body{
   -ms-flex-align: center;
   padding: 5px 8px 0 16px;
   padding-left: 14px;
-  height: 45px;
-  width: 650px;
+  height: 47px;
+  width: 590px;
   margin: auto;
-  border:1px solid rgb(236, 236, 236);
+  border:1px solid rgb(231, 230, 230);
   border-radius: 30px;
 
 }
@@ -91,11 +99,12 @@ body{
   font-size: 18px;
   margin-top: -1px;
   height: 35px;
-  width: 550px; 
+  width: 490px; 
   border-style:none;
 
 }
 .s-icon1{
+  color: silver;
   display: flex;
   align-items: center;
   padding-right: 13px;
@@ -120,16 +129,10 @@ input[type=text]:focus{
   
 }
 
-#google{
-  font-family: 'Sans-serif' !important;
-  font-size: 90px;
-  font-weight: 500;
-  font-stretch: ultra-expanded;
-  padding-bottom: 12px;
-}
+
 .logo-con{
   background-color: white;
-  padding: 15px 20px;
+  padding: 5px 20px 25px 20px;
   margin: 0;
   left: 0;
   right: 0;
@@ -139,20 +142,22 @@ input[type=text]:focus{
   background-color: #f8f9fa; 
   border: 1px solid #f8f9fa;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
   padding: 10px;
-  letter-spacing: 1.2px;
-  margin: 10px 5px;  
+  margin: 10px 10px 15px 10px;  
 }
 .middle-button:hover{
   box-shadow: 0 1px 4px rgb(32 33 36 / 50%);
   border-color: rgba(223,225,229,0);
 }
-
+.lang-sel{
+  font-size:13px;
+  margin-top: 5px;
+}
 .lang-link{
   color: rgb(28, 104, 246);
-  margin: 0px 4px;
+  margin: 0px 2px;
 }
 .lang-link:hover ,.lang-link:hover{
   color: rgb(28, 104, 246);
@@ -162,17 +167,20 @@ input[type=text]:focus{
 /*  end  middle   */
 
 .sbottom{
+  background-color: rgb(245, 245, 245);
   color: slategray;
-  padding: 15px 15px 2px 15px;
+  padding: 14px 15px 0px 29px;
   border-bottom: 1px solid rgb(201, 201, 201);
   border-radius: 0;
   margin: auto;
 }
 .bottom{
-  padding: 20px;
+  background-color: rgb(245, 245, 245);
+  padding: 15px 25px;
   border-radius: 0;
 }
 .bottom .row a{
+  color: slategray;
   padding: 0px 10px;
 }
 .left-col{
@@ -183,6 +191,7 @@ input[type=text]:focus{
 }
 footer{
   position:absolute;
+  letter-spacing: .5px;
   left:0;
   right:0;
   bottom:0;
@@ -203,11 +212,11 @@ footer{
   #searchform{
     width: 80vw;
   }
-  
   .left-col{
     text-align: center;
   }
-  .right-col{
+  .right-col{ 
+    margin-top: 10px;
     text-align: center;
   }
   footer{
@@ -222,6 +231,13 @@ footer{
   #main{
     position: relative;
     margin-bottom: 5vh;
+  }
+  .left-col{
+    text-align: center;
+  }
+  .right-col{ 
+    margin-top: 10px;
+    text-align: center;
   }
   footer{
     position: static;
