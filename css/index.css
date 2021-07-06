@@ -1,23 +1,43 @@
 body{
-    font: 12px Arial,Sans-Serif;
-    color: slategray;
-    background-color: blue;
-    height: 100%;
+    font: 14px Arial,Sans-Serif;
+    color: rgb(19, 19, 19);
+    background-color: white;
     width: 100%;
+    height: 100%;
     margin: 0;
     overflow: hidden;
 }
 /*  head  */
 
-h2{
-    color: rgb(20, 0, 0);
-    font-family: Arial, Helvetica;
-}
+
 .top{
     background-color: white;
     padding: 12px 25px 0px 25px;
     margin-bottom:0;
     border-radius: 0;
+}
+.flex-container{
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  justify-items: center;
+  font-size: 12px;
+}
+.flex-container > div {
+  margin: 1px -5px 0px 15px;
+  padding:auto;
+}
+.top-link-text{
+  padding: 10px 4px 5px 4px;
+}
+.top-link-icon{
+  padding-left: 20px;
+  padding-top:6px;
+  padding-bottom: 0;
+}
+.top-link-button{
+  padding-top:0;
+  padding-left: 0px;
 }
 #login{
   font-size: 14px;
@@ -30,23 +50,76 @@ h2{
   border-radius: 4px; 
   letter-spacing: 1px;
 }
+
 /*  end  head   */
 
 /*  middle  */
+#main{
+  position: static;
+  background-color: white;
+  height: 83vh;
+  margin:0;
+}
 .middle{
   background-color: white;
   padding-top:1px;
   margin-top: 0;
   margin-bottom:0;
-  height: 100vh;
 }
-#searchbar{
+
+#searchform{
+  flex: 1;
+  display: flex;
+  -ms-flex-align: center;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
   height: 45px;
-  width: 590px;
-  border:1px solid rgb(209, 209, 209);
+  width: 650px;
+  margin: auto;
+  border:1px solid rgb(236, 236, 236);
   border-radius: 30px;
-  margin-bottom: 20px;
+
 }
+#searchform:hover{
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223,225,229,0);
+}
+
+#searchbar{
+  background-color: white;
+  font-size: 18px;
+  margin-top: -1px;
+  height: 35px;
+  width: 550px; 
+  border-style:none;
+
+}
+.s-icon1{
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: 11px;
+}
+.s-icon2{
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0 8px;
+  width: 24px;
+  line-height: 44px;
+  margin-top: 11px;
+}
+
+input[type=text]:focus{
+  outline:none; 
+  
+}
+
 #google{
   font-family: 'Sans-serif' !important;
   font-size: 90px;
@@ -54,30 +127,40 @@ h2{
   font-stretch: ultra-expanded;
   padding-bottom: 12px;
 }
-/*google colors*/
-.blue{color: rgb(39, 119, 240);}
-.red{color: rgba(255, 60, 0, 0.932);}
-.yellow{color: rgba(238, 138, 8, 0.918);}
-.green{color: rgba(16, 141, 16, 0.945);}
-/*google colors*/
-
-.middle-button{
-  background-color: rgb(247, 247, 247);
-  font-size: 13px;
-  padding: 10px;
-  letter-spacing: 1.2px;
-  margin: 10px 5px;
-  border-style: none;
-  border-radius: 4px;
-}
-/*  end  middle   */
-footer{
-  position: fixed;
+.logo-con{
+  background-color: white;
+  padding: 15px 20px;
+  margin: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  margin: 0;
 }
+
+.middle-button{
+  background-color: #f8f9fa; 
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 10px;
+  letter-spacing: 1.2px;
+  margin: 10px 5px;  
+}
+.middle-button:hover{
+  box-shadow: 0 1px 4px rgb(32 33 36 / 50%);
+  border-color: rgba(223,225,229,0);
+}
+
+.lang-link{
+  color: rgb(28, 104, 246);
+  margin: 0px 4px;
+}
+.lang-link:hover ,.lang-link:hover{
+  color: rgb(28, 104, 246);
+  text-decoration: underline;
+}
+
+/*  end  middle   */
+
 .sbottom{
   color: slategray;
   padding: 15px 15px 2px 15px;
@@ -98,12 +181,26 @@ footer{
 .right-col{
   text-align: right;
 }
+footer{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: 0 auto;
+}
 
-@media screen and (max-width: 800px) and (max-height: 500px) {
+@media screen and (max-width: 800px){
   body{
     overflow: visible;
   }
+  #main{
+    position: relative;
+  
+  }
   #searchbar{
+    width: 60vw;
+  }
+  #searchform{
     width: 80vw;
   }
   
@@ -114,7 +211,19 @@ footer{
     text-align: center;
   }
   footer{
-    position: realtive;
+    position: static;
   }
   
+}
+@media screen and (max-height: 600px){
+  body{
+    overflow: visible;
+  }
+  #main{
+    position: relative;
+    margin-bottom: 5vh;
+  }
+  footer{
+    position: static;
+  }
 }

@@ -10,34 +10,54 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-        <link rel="stylesheet"  href="css/index.css">
+        <link rel="stylesheet"  href="css/index.css">  
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 <body>
   <!--top-->
-  <div class="jumbotron jumbotrion-fluid top text-right">
-    <a href="">Gmail</a>
-    <a href="">Images</a>
-    <label for="login">
-       <input type="submit" value="Sign In"name="login" id="login">
-    </label> 
+  <div id="main">
+    <div class="top text-right">
+      <div class="flex-container">
+        <div class="top-link-text"><a href="">Gmail</a></div>
+        <div class="top-link-text"><a href="">Images</a></div>
+        <div class="top-link-icon"><span class="material-icons">apps</span></div>
+        <div class="top-link-button"> 
+          <label for="login">
+           <input type="submit" value="Sign In"name="login" id="login">
+          </label> 
+        </div>  
+      </div>  
+    </div>
+    <!--end top--> 
+    <!--middle--> 
+    <div class="logo-con text-center">
+      <img src="images/googlelogo.png" alt="google_logo">
+    </div>
+    <div class="middle text-center"> 
+      <div id="searchform"> 
+        <div class="s-icon1">
+          <p class="material-icons">search</p>
+        </div>
+        <div>
+          <label for="searchbar">
+           <input type="text" name="searchbar" id="searchbar">
+          </label>
+        </div>  
+        <div class="s-icon2">
+          <p class="material-icons" alt="Voice">mic</p>
+        </div>
+      </div> 
+      <br>
+      <label for="gsearch" >
+        <input type="submit" value="Google Search" name="gsearch" id="gsearch" class="middle-button">
+      </label>
+      <label for="lsearch">
+        <input type="submit" value="I'm Feeling Lucky" name="lsearch" id="lsearch" class="middle-button">
+      </label>
+      <br>
+      <p>Google offered in: <a href="#" class="lang-link"> Filipino </a> <a href="#" class="lang-link">Cebuano</a></p>
+    </div> 
   </div>
-  <!--end top--> 
-  <!--middle--> 
-  <div class="jumbotron jumbotron-fluid middle text-center">
-    <h2 id="google"><span class="blue">G</span><span span class="red">o</span><span span class="yellow">o</span><span class="blue">g</span><spanspan class="green">l</span><span class="red">e</span></h2>
-    <label for="searchbar">
-      <input type="search" name="searchbar" id="searchbar">
-    </label>
-    <br>
-    <label for="gsearch">
-      <input type="submit" value="Google Search" name="gsearch" id="gsearch" class="middle-button">
-    </label>
-    <label for="lsearch">
-      <input type="submit" value="I'm Feeling Lucky" name="lsearch" id="lsearch" class="middle-button">
-    </label>
-    <br>
-    <p>Google offered in:<a href="#"> Filipino</a> <a href="#">Cebuano</a></p>
-  </div> 
   <!--end middle-->
   <footer>
     <!--second middle-->
@@ -63,5 +83,6 @@
           </div>
     </div>
   </footer>
+
 </body>
 </html>
