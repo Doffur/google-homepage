@@ -28,7 +28,7 @@ body{
   padding:auto;
 }
 .top-link-text{
-  padding: 10px 2px;
+  padding: 15px 2px;
 }
 .top-link-text a{
   letter-spacing: .5;
@@ -36,16 +36,16 @@ body{
 }
 
 .top-link-icon{
-  color: rgb(112, 112, 112);
+  color: rgb(136, 136, 136);
 
 }
 .top-link-icon span{
   margin-left: 14px;
-  padding: 6px;
+  padding: 10px;
 }
 .top-link-icon span:hover{
-  background-color: rgb(226, 223, 223);
-  border-radius:20px;
+  background-color: rgb(241, 241, 241);
+  border-radius:25px;
 
 }#login{
   font-size: 14px;
@@ -136,10 +136,12 @@ body{
   font-size: 12px;
   line-height: 30px;
   height: 30px;
-  width: 98px;
-  background-color: black;
+  width: 105px;
+  background-color: rgb(46, 46, 46);
   color: #fff;
   text-align: center;
+  border:1px solid white;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
   position: absolute;
   margin-left:-38px;
   margin-top: 70px;
@@ -153,7 +155,7 @@ body{
   margin-left: -5px;
   border-width: 5px;
   border-style:solid;
-  border-color: transparent  transparent black transparent  ;
+  border-color: transparent  transparent rgb(46, 46, 46) transparent  ;
 }
 .mictooltip:hover .tooltiptext{
   visibility: visible;
